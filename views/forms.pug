@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Update the Database
+  form(method="POST", action="/")
+    p
+    span Enter First Name:
+    span
+    input(type="text", name="fname")
+    p
+    span Enter new age:
+    span
+    input(type="text", name="nage")
+    p
+    button(type="submit") Submit
